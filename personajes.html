@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personajes — Code Geass</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" type="image/jpg" href="Imágenes/ico.jpg">
+    <style>
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.03); }
+        100% { transform: scale(1); }
+      }
+      @keyframes shake {
+        0% { transform: translateX(0); }
+        25% { transform: translateX(-6px); }
+        50% { transform: translateX(6px); }
+        75% { transform: translateX(-6px); }
+        100% { transform: translateX(0); }
+      }
+      #quiz-card.animate-correct { animation: pulse 450ms ease; box-shadow: 0 8px 20px rgba(40,167,69,0.15); }
+      #quiz-card.animate-wrong { animation: shake 420ms linear; box-shadow: 0 8px 20px rgba(220,53,69,0.12); }
+      #quiz-prompt { font-weight:600; }
+      .quiz-streak-badge{
+        display:inline-block;
+        min-width:2rem;
+        text-align:center;
+        padding:0.1rem 0.5rem;
+        border-radius:0.35rem;
+        font-weight:700;
+        background: var(--btn-bg);
+        color: var(--card-text-color);
+      }
+
+      #quiz-card .quiz-note { color: var(--card-text-color) !important; }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Code Geass</a>
+        <div class="d-flex align-items-center">
+          <button id="ActivarDarkmode" class="ms-2" aria-label="Alternar modo oscuro">☀️</button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="que-es-codegeass.html">¿Qué es?</a></li>
+            <li class="nav-item"><a class="nav-link active" href="personajes.html">Personajes</a></li>
+            <li class="nav-item"><a class="nav-link" href="filosofias.html">Filosofías</a></li>
+            <li class="nav-item"><a class="nav-link" href="enlaces.html">Enlaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container mt-5 pt-4">
+      <h1>Personajes principales</h1>
+      <p class="lead">Perfiles cortos con imágenes de los personajes principales y algunos datos rápidos.</p>
+
+      <div class="row mt-4">
+        <div class="col-md-6 mb-4">
+          <div class="card shadow-sm">
+            <img src="Imágenes/Lelouch card.jpg" class="card-img-top" alt="Lelouch">
+            <div class="card-body">
+              <h5 class="card-title">👑 Lelouch VI Britannia</h5>
+              <p class="card-text">Como ya saben hasta ahora, es el protagonista de la historia y una mente maestra respecto a ser un líder y generar estrategias. Opera bajo el seudónimo de <strong>Zero</strong>, un hombre enmascarado que representa un símbolo para la rebelión. Usa el Geass y la táctica para cambiar el destino de los reprimidos por los poderosos...</p>
+              <a href="filosofias.html#lelouch" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card shadow-sm">
+            <img src="Imágenes/CC2.jpg" class="card-img-top" alt="C.C.">
+            <div class="card-body">
+              <h5 class="card-title">🌀 C.C</h5>
+              <p class="card-text">Es "La bruja inmortal" que le otorga a Lelouch el poder del Geass y lo acompaña en su lucha. Es una de sus más grandes aliados, sin embargo, sus motivaciones reales, nombre e incluso su pasado son un misterio...</p>
+              <a href="filosofias.html#cc" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card shadow-sm">
+            <img src="Imágenes/Suzaku2.jpg" class="card-img-top" alt="Suzaku">
+            <div class="card-body">
+              <h5 class="card-title">⚔️ Suzaku Kururugi</h5>
+              <p class="card-text">Un japonés que se hace soldado honorario del imperio Britaniano, y a su vez el mejor amigo de la infancia de Lelouch. También quiere detener la represión, pero sus métodos colisionan totalmente con los de Lelouch.</p>
+              <a href="filosofias.html#suzaku" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card shadow-sm">
+            <img src="Imágenes/Kallen2.jpg" class="card-img-top" alt="Kallen">
+            <div class="card-body">
+              <h5 class="card-title">Kallen Kouzuki</h5>
+              <p class="card-text">Compañera de clase de Lelouch que resulta ser parte de la resistencia contra el Imperio de Britannia. Su destreza con el mecha y su temple en general la vuelven "la mano derecha" de Zero.</p>
+              <a href="filosofias.html#kallen" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="mt-4">
+        <h2 class="text-danger">Antagonista principal: Charles ZI Britannia</h2>
+        <div class="card mb-4 shadow-sm">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-4 text-center p-3">
+              <img src="Imágenes/Charles ZI Britannia.jpg" class="img-fluid rounded" alt="Charles zi Britannia">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Charles ZI Britannia</h5>
+                <p class="card-text">Es el rey (emperador / monarca) del Imperio de Britannia y figura antagonista clave. Es el padre de Lelouch y el enemigo directo de la rebelión. Sus decisiones y su visión filosófica generan grandes conflictos éticos y políticos en el mundo de la serie.</p>
+                <p class="card-text"><small style="color:var(--card-text-color);">Ver también: <a href="filosofias.html" style="color:inherit; text-decoration:underline;">Filosofías</a> para contextos y análisis.</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-4 mb-5">
+        <h3>Datos curiosos</h3>
+        <div class="row">
+          <div class="col-sm-6 col-md-4 mb-3 text-center">
+            <img src="Imágenes/Geass.jpg" alt="Geass" class="img-fluid rounded">
+            <p class="mt-2" style="color:var(--text-color);">El Geass: sólo puede usarse una vez por persona.</p>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-3 text-center">
+            <img id="mecha-ejemplo" src="Imágenes/curiosidad-mecha.jpg" alt="Mecha" class="img-fluid rounded" style="max-height:220px; object-fit:cover;">
+            <p class="mt-2" style="color:var(--text-color);">Este es uno de los mechas vistos en la serie.</p>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-3 text-center">
+            <img src="Gifs/Pizza gif- code geass.gif" alt="Pizza gif" class="img-fluid rounded" style="max-height:220px; object-fit:cover;" onerror="this.style.display='none'">
+            <p class="mt-2" style="color:var(--text-color);">C.C ama las pizzas.</p>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12">
+            <div class="card p-3 shadow-sm" id="quiz-card">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h4 class="mb-0">Prueba rápida: ¿Verdadero o falso?</h4>
+                <div class="text-end">Racha: <span id="quiz-streak" class="quiz-streak-badge">0</span></div>
+              </div>
+              <p class="mb-2" id="quiz-prompt">Haz clic en <strong>Sacar pregunta</strong> para generar una pregunta aleatoria.</p>
+
+              <div id="quiz-controls" class="mb-2">
+                <button id="quiz-roll" class="btn btn-outline-primary me-2">Sacar pregunta</button>
+                <button id="quiz-yes" class="btn btn-success me-2" disabled aria-disabled="true">Sí</button>
+                <button id="quiz-no" class="btn btn-danger me-2" disabled aria-disabled="true">No</button>
+                <button id="quiz-next" class="btn btn-secondary" style="display:none;">Siguiente</button>
+              </div>
+
+              <div id="quiz-feedback" class="alert" role="status" aria-live="polite" style="display:none;"></div>
+              <small class="quiz-note">Al responder recibirás si tu opción es correcta y la explicación.</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="mt-5">
+        <p>Síguenos en: 
+          <a href="https://x.com/khativx?s=21" aria-label="X - khativx" title="Seguir en X (Twitter)" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-twitter"></i>
+          </a>
+          
+          <a href="https://www.instagram.com/bryan_lop2205?igsh=MWcybWQ2eXUwMHNjag%3D%3D&utm_source=qr" aria-label="Instagram - bryan_lop2205" title="Seguir en Instagram" target="_blank" rel="noopener noreferrer" class="ms-2">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </p>
+      </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="theme.js"></script>
+    <script>
+      (function(){
+        const questions = [
+          { id:1, q: '¿C.C. disfruta de la pizza?', a: true, explain: 'Sí — C.C. ama las pizzas (dato divertido de la serie).'},
+          { id:2, q: '¿El Geass puede usarse más de una vez por la misma persona?', a: false, explain: 'No — en la mitología de la serie, el Geass sólo puede usarse una vez por individuo.'},
+          { id:3, q: '¿Lelouch usa el alias "Zero" cuando lidera la rebelión?', a: true, explain: 'Sí — Lelouch adopta el seudónimo Zero para ocultar su identidad mientras lidera a los Caballeros Negros.'},
+          { id:4, q: '¿Charles ZI Britannia es monarca del Imperio?', a: true, explain: 'Sí — Charles es presentado como monarca, figura antagonista importante.'},
+          { id:5, q: '¿Suzaku y Lelouch son amigos de la infancia?', a: true, explain: 'Sí — se menciona que son amigos de la infancia, lo que añade complejidad a su relación.'}
+        ];
+
+        let available = questions.slice(); 
+        let streak = 0;
+
+        const elPrompt = document.getElementById('quiz-prompt');
+        const btnRoll = document.getElementById('quiz-roll');
+        const btnYes = document.getElementById('quiz-yes');
+        const btnNo = document.getElementById('quiz-no');
+        const btnNext = document.getElementById('quiz-next');
+        const feedback = document.getElementById('quiz-feedback');
+        const elStreak = document.getElementById('quiz-streak');
+        const quizCard = document.getElementById('quiz-card');
+
+        let current = null;
+        let lastId = null;
+
+        function updateStreak(){ elStreak.textContent = streak; }
+
+        function pickRandom(){
+          if(available.length === 0) return null;
+          let idx = Math.floor(Math.random()*available.length);
+          if(available.length>1 && available[idx].id === lastId){
+            idx = (idx + 1) % available.length;
+          }
+          const pick = available[idx];
+          lastId = pick.id;
+          return pick;
+        }
+
+        function removeFromAvailable(id){ available = available.filter(q => q.id !== id); }
+
+        function resetAvailable(){ available = questions.slice(); }
+
+        function animate(type){
+          if(!quizCard) return;
+          const cls = type === 'correct' ? 'animate-correct' : 'animate-wrong';
+          quizCard.classList.add(cls);
+          setTimeout(() => quizCard.classList.remove(cls), 600);
+        }
+
+        function showQuestion(q){
+          current = q;
+          elPrompt.textContent = q.q;
+          btnYes.disabled = false; btnYes.setAttribute('aria-disabled','false');
+          btnNo.disabled = false; btnNo.setAttribute('aria-disabled','false');
+          btnNext.style.display = 'none';
+          feedback.style.display = 'none'; feedback.className = 'alert'; feedback.textContent = '';
+          btnYes.focus();
+        }
+
+        function showResult(userAnswer){
+          const correct = (userAnswer === current.a);
+          feedback.style.display = 'block';
+          feedback.className = correct ? 'alert alert-success' : 'alert alert-danger';
+          const correctText = current.a ? 'Sí' : 'No';
+          feedback.innerHTML = (correct ? '✅ Correcto. ' : '❌ Incorrecto. ') + '<strong>Respuesta correcta:</strong> ' + correctText + '.<br>' + current.explain;
+          btnYes.disabled = true; btnYes.setAttribute('aria-disabled','true');
+          btnNo.disabled = true; btnNo.setAttribute('aria-disabled','true');
+          btnNext.style.display = 'inline-block';
+
+          if(correct){
+            streak += 1;
+            updateStreak();
+            animate('correct');
+            removeFromAvailable(current.id);
+            if(available.length === 0){
+              setTimeout(()=>{
+                feedback.innerHTML += '<br><em>Has respondido todas las preguntas — se reinicia el banco.</em>';
+                resetAvailable();
+              }, 800);
+            }
+          } else {
+            streak = 0; updateStreak();
+            animate('wrong');
+            setTimeout(()=>{ resetAvailable(); }, 400);
+          }
+          btnNext.focus();
+        }
+
+        btnRoll.addEventListener('click', function(){
+          const q = pickRandom();
+          if(!q) return;
+          showQuestion(q);
+        });
+
+        btnYes.addEventListener('click', function(){ if(current) showResult(true); });
+        btnNo.addEventListener('click', function(){ if(current) showResult(false); });
+
+        btnNext.addEventListener('click', function(){
+          const q = pickRandom();
+          if(!q) return;
+          showQuestion(q);
+        });
+
+        document.addEventListener('keydown', function(e){
+          if(e.key === 'y' || e.key === 'Y') { if(!btnYes.disabled) btnYes.click(); }
+          if(e.key === 'n' || e.key === 'N') { if(!btnNo.disabled) btnNo.click(); }
+          if(e.key === 'r' || e.key === 'R') { btnRoll.click(); }
+        });
+
+        updateStreak();
+      })();
+    </script>
+  </body>
+</html>
